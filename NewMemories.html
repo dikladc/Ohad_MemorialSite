@@ -1,232 +1,275 @@
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>זכרונות - אוהד דותן</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #033958;
-            background-image: url('images/REKA.jpg');
-            color: #333;
-            direction: rtl;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #116CA1;
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #676C08;
-            font-size: 20px;
-            margin-top: 30px;
-            border-bottom: 2px solid #FDB245;
-            padding-bottom: 10px;
-        }
-        .intro {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #754715;
-            margin-bottom: 30px;
-            text-align: justify;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            font-weight: bold;
-            color: #676C08;
-            margin-bottom: 5px;
-            font-size: 14px;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #D4ECEB;
-            border-radius: 5px;
-            font-size: 14px;
-            font-family: Arial, sans-serif;
-            box-sizing: border-box;
-            direction: rtl;
-        }
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        textarea:focus {
-            outline: none;
-            border-color: #116CA1;
-        }
-        textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-        input[type="file"] {
-            padding: 10px 0;
-        }
-        button[type="submit"] {
-            background-color: #116CA1;
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            transition: background-color 0.3s;
-        }
-        button[type="submit"]:hover {
-            background-color: #0876B6;
-        }
-        .required {
-            color: #d9534f;
-        }
-        .back-link {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .back-link a {
-            color: #116CA1;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .back-link a:hover {
-            text-decoration: underline;
-        }
-        .success-message {
-            background-color: #d4edda;
-            border: 1px solid #c3e6cb;
-            color: #155724;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            display: none;
-        }
-        .memories-display {
-            margin-top: 40px;
-            padding-top: 30px;
-            border-top: 3px solid #FDB245;
-        }
-        .memory-item {
-            background: #f9f9f9;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-right: 4px solid #116CA1;
-            border-radius: 5px;
-        }
-        .memory-header {
-            color: #116CA1;
-            font-weight: bold;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-        .memory-text {
-            color: #333;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-        .memory-photo {
-            max-width: 100%;
-            margin-top: 15px;
-            border-radius: 5px;
-        }
-        .honeypot {
-            display: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>זכרונות עם אוהד</h1>
+<HTML>
+<HEAD>
+<TITLE>אוהד דותן - אתר הנצחה - זכרונות חדשים</TITLE>
 
-        <div class="intro">
-            <p>
-                לכולנו יש זיכרונות משותפים עם אוהד. אירועים משמעותיים שחווינו ביחד איתו או סתם אפיזודות מצחיקות / מרגשות / עצובות וכל דבר אחר.
-            </p>
-            <p>
-                לכל מי שהכיר את אוהד - כאן המקום להעלות על הכתב זיכרונות עימו מהתקופה המשותפת. אירועים, הלצות, שיחות, מסיבות, טיולים, בילויים וכל דבר אחר שאתם זוכרים מאוהד ורוצים לשתף.
-            </p>
-        </div>
+<META Name ="description" CONTENT ="אתר זה הוקם לזכרו של אוהד אהובנו אשר נקטף מאיתנו בטרם עת. באתר אפשר להתרפק על זכרונות, לשתף בגעגועים וגם לתת, לקבל, ולהעביר את זה הלאה בבומרנג.">
 
-        <div id="success-message" class="success-message">
-            תודה רבה! הזיכרון שלך נשמר בהצלחה ויופיע בקרוב באתר.
-        </div>
+<meta name="keywords" content="אוהד, דותן, אתר הנצחה, הנצחה, הר קוק, ניו-זילנד, מטייל, נהרג, תמיד יחכו לך, בומרנג, תעביר את זה הלאה, תן קח, הספדים, געגועים, Ohad, Dotan, Boomerang">
 
-        <h2>שתף זיכרון</h2>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta http-equiv="imagetoolbar" content="no">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
-        <form name="memories" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
-            <!-- Honeypot field for spam protection -->
-            <p class="honeypot">
-                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-            </p>
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 
-            <input type="hidden" name="form-name" value="memories" />
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
 
-            <div class="form-group">
-                <label for="name">שם <span class="required">*</span></label>
-                <input type="text" id="name" name="name" required placeholder="השם שלך">
-            </div>
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
 
-            <div class="form-group">
-                <label for="email">אימייל (לא יפורסם)</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com">
-            </div>
+<style>
+body {
+    scrollbar-face-color: #116CA1;
+    scrollbar-shadow-color: #043B5A;
+    scrollbar-highlight-color: #4EA4D5;
+    scrollbar-3dlight-color: #045584;
+    scrollbar-darkshadow-color: #12547A;
+    scrollbar-track-color: #033958;
+    scrollbar-arrow-color: #FFB13F;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    color: #676C08;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 8px;
+    border: 2px solid #D4ECEB;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
+textarea {
+    min-height: 120px;
+}
+button[type="submit"] {
+    background-color: #116CA1;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #0876B6;
+}
+.required {
+    color: #d9534f;
+}
+.success-message {
+    background-color: #d4edda;
+    border: 2px solid #c3e6cb;
+    color: #155724;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: none;
+}
+.honeypot {
+    display: none;
+}
+</style>
+</HEAD>
+<BODY BGCOLOR="#033958" background="images/REKA.jpg" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 onLoad="MM_preloadImages('images/Ohad_bouton-ROL_02.jpg','images/Ohad_bouton-ROL_03.jpg','images/Ohad_bouton-ROL_04.jpg','images/Ohad_bouton-ROL_05.jpg','images/Ohad_bouton-ROL_06.jpg','images/Ohad_bouton-ROL_07.jpg','images/Ohad_bouton-ROL_08.jpg','images/Ohad_bouton-ROL_09.jpg','images/Ohad_bouton-ROL_10.jpg','images/Ohad_bouton-ROL_11.jpg','images/Ohad_bouton-ROL_12.jpg','images/Ohad_bouton-ROL_13.jpg','images/Ohad_bouton-ROL_14.jpg','images/Ohad_bouton-ROL_15.jpg','images/Ohad_bouton-ROL_16.jpg')">
+<TABLE align="center" WIDTH=1000 BORDER=0 CELLPADDING=0 CELLSPACING=0 style="BORDER-RIGHT: #FFBE75 1px solid;BORDER-LEFT:#FFBE75 1px solid;">
+	<TR>
 
-            <div class="form-group">
-                <label for="title">כותרת</label>
-                <input type="text" id="title" name="title" placeholder="כותרת קצרה לזיכרון">
-            </div>
+    <TD COLSPAN=2> <IMG SRC="images/Ohad_01.jpg" ALT="" WIDTH=1000 HEIGHT=110 border="0" usemap="#Map"></TD>
+	</TR>
+	<TR>
+		<TD valign="top" width="770">
+			<!-- תוכן ראשי -->
+			<TABLE WIDTH=770 BORDER=0 CELLPADDING=20 CELLSPACING=0>
+				<TR>
+					<TD align="right" valign="top">
 
-            <div class="form-group">
-                <label for="memory">הזיכרון <span class="required">*</span></label>
-                <textarea id="memory" name="memory" required placeholder="ספר לנו את הזיכרון שלך עם אוהד..."></textarea>
-            </div>
+						<div id="success-message" class="success-message">
+							<font class="b">תודה רבה! הזיכרון שלך נשמר בהצלחה ויופיע בקרוב באתר.</font>
+						</div>
 
-            <div class="form-group">
-                <label for="photo">תמונה (אופציונלי)</label>
-                <input type="file" id="photo" name="photo" accept="image/*">
-                <small style="color: #666; font-size: 12px;">תמונה שמתאימה לזיכרון</small>
-            </div>
+						<font class="a"><b>זכרונות חדשים</b></font><br><br>
 
-            <div class="form-group">
-                <button type="submit">שלח זיכרון</button>
-            </div>
-        </form>
+						<font class="c">
+						<div align="justify">
+						לכולנו יש זיכרונות משותפים עם אוהד. אירועים משמעותיים שחווינו ביחד איתו או סתם אפיזודות מצחיקות / מרגשות / עצובות וכל דבר אחר.
+						<br><br>
+						לכל מי שהכיר את אוהד - כאן המקום להעלות על הכתב זיכרונות עימו מהתקופה המשותפת. אירועים, הלצות, שיחות, מסיבות, טיולים, בילויים וכל דבר אחר שאתם זוכרים מאוהד ורוצים לשתף.
+						<br><br>
+						</div>
 
-        <div class="back-link">
-            <a href="index.html">חזרה לדף הבית</a>
-        </div>
+						<center><img src="images/OhadDotan2.jpg" width="340" height="32" alt="" border="0"></center><br>
 
-        <!-- This section will display submitted memories -->
-        <div class="memories-display" id="memories-list">
-            <h2>זכרונות שנשלחו</h2>
-            <p style="text-align: center; color: #666;">הזכרונות שישלחו יופיעו כאן לאחר שליחה.</p>
-        </div>
-    </div>
+						<b>שתף זיכרון משלך:</b><br><br>
 
-    <script>
-        // Handle form submission success
-        const form = document.querySelector('form[name="memories"]');
-        const successMessage = document.getElementById('success-message');
+						<form name="memories" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
+							<!-- Honeypot field for spam protection -->
+							<p class="honeypot">
+								<label>Don't fill this out if you're human: <input name="bot-field" /></label>
+							</p>
 
-        if (window.location.search.includes('success=true')) {
-            successMessage.style.display = 'block';
-            form.style.display = 'none';
-            window.scrollTo(0, 0);
-        }
-    </script>
-</body>
-</html>
+							<input type="hidden" name="form-name" value="memories" />
+
+							<div class="form-group">
+								<label for="name">שם <span class="required">*</span></label>
+								<input type="text" id="name" name="name" required placeholder="השם שלך">
+							</div>
+
+							<div class="form-group">
+								<label for="email">אימייל (לא יפורסם)</label>
+								<input type="email" id="email" name="email" placeholder="your@email.com">
+							</div>
+
+							<div class="form-group">
+								<label for="title">כותרת</label>
+								<input type="text" id="title" name="title" placeholder="כותרת קצרה לזיכרון">
+							</div>
+
+							<div class="form-group">
+								<label for="memory">הזיכרון <span class="required">*</span></label>
+								<textarea id="memory" name="memory" required placeholder="ספר לנו את הזיכרון שלך עם אוהד..."></textarea>
+							</div>
+
+							<div class="form-group">
+								<label for="photo">תמונה (אופציונלי)</label>
+								<input type="file" id="photo" name="photo" accept="image/*"><br>
+								<small style="color: #666; font-size: 12px;">תמונה שמתאימה לזיכרון</small>
+							</div>
+
+							<div class="form-group">
+								<button type="submit">שלח זיכרון</button>
+							</div>
+						</form>
+
+						<br><br>
+						<center><a href="index.html" class="menu2">חזרה לדף הבית</a></center>
+						<br><br>
+
+						</font>
+
+					</TD>
+				</TR>
+			</TABLE>
+			<!-- סוף תוכן ראשי -->
+		</TD>
+
+		<!-- תפריט -->
+		<TD ROWSPAN=2 align="right" valign="top"  bgcolor="#FFB13F" background="images/Ohad_bouton_17.jpg">
+		<TABLE WIDTH=230 BORDER=0 CELLPADDING=0 CELLSPACING=0  bgcolor="#FFB13F" >
+	<TR>
+		<TD>
+			<IMG SRC="images/Ohad_bouton_01.jpg" WIDTH=230 HEIGHT=28 ALT=""></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','images/Ohad_bouton-ROL_02.jpg',1)"><img src="images/Ohad_bouton_02.jpg" name="Image21" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Always.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','images/Ohad_bouton-ROL_03.jpg',1)"><img src="images/Ohad_bouton_03.jpg" name="Image22" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Ohad.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','images/Ohad_bouton-ROL_04.jpg',1)"><img src="images/Ohad_bouton_04.jpg" name="Image23" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Living.html " onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','images/Ohad_bouton-ROL_05.jpg',1)"><img src="images/Ohad_bouton_05.jpg" name="Image24" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Service.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','images/Ohad_bouton-ROL_06.jpg',1)"><img src="images/Ohad_bouton_06.jpg" name="Image25" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Fun.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','images/Ohad_bouton-ROL_07.jpg',1)"><img src="images/Ohad_bouton_07.jpg" name="Image26" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Gallery.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','images/Ohad_bouton-ROL_08.jpg',1)"><img src="images/Ohad_bouton_08.jpg" name="Image27" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Writing.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','images/Ohad_bouton-ROL_09.jpg',1)"><img src="images/Ohad_bouton_09.jpg" name="Image28" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Longing.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','images/Ohad_bouton-ROL_10.jpg',1)"><img src="images/Ohad_bouton_10.jpg" name="Image29" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="NewMemories.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','images/Ohad_bouton-ROL_11.jpg',1)"><img src="images/Ohad_bouton_11.jpg" name="Image30" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Forever.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','images/Ohad_bouton-ROL_12.jpg',1)"><img src="images/Ohad_bouton_12.jpg" name="Image31" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="Contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','images/Ohad_bouton-ROL_13.jpg',1)"><img src="images/Ohad_bouton_13.jpg" name="Image32" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="English.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','images/Ohad_bouton-ROL_14.jpg',1)"><img src="images/Ohad_bouton_14.jpg" name="Image33" width="230" height="30" border="0"></a></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/Ohad_bouton_15.jpg" WIDTH=230 HEIGHT=23 ALT=""></TD>
+	</TR>
+	<TR>
+		  <TD> <a href="http://www.ohadotan.com" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','images/Ohad_bouton-ROL_16.jpg',1)"><img src="images/Ohad_bouton_16.jpg" name="Image34" width="230" height="41" border="0"></a></TD>
+	</TR>
+</TABLE>
+		</TD>
+		<!-- סוף תפריט -->
+	</TR>
+	<TR>
+		<TD valign="bottom">
+			<IMG SRC="images/Ohad_19.jpg" WIDTH=770 HEIGHT=35 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 valign="top" bgcolor="#FFB13F" background="images/Ohad_20.jpg">
+		<TABLE WIDTH=1000 BORDER=0 CELLPADDING=5 CELLSPACING=0  bgcolor="#FFB13F" >
+	<TR>
+		<TD width="100"  align="right">
+	<font class="d">	<a class="menu1"  href="http://www.ayagolan.com" target="_blank">עיצוב  אתר:</a>
+			<a class="menu1"  href="http://www.ayagolan.com" target="_blank">   איה גולן</a></font></TD>
+		<TD width="900"  align="center"  dir="rtl">
+			<font class="d"> ©  כל הזכויות שמורות: <a class="menu1"  href="http://www.ohadotan.com">למשפחת דותן</a></font></TD>
+
+	</TR>
+</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+<map name="Map">
+  <area shape="rect" coords="390,61,505,93" href="index.html">
+</map>
+
+<script>
+// Handle form submission success
+const form = document.querySelector('form[name="memories"]');
+const successMessage = document.getElementById('success-message');
+
+if (window.location.search.includes('success=true')) {
+    successMessage.style.display = 'block';
+    form.style.display = 'none';
+    window.scrollTo(0, 0);
+}
+</script>
+
+</BODY>
+</HTML>
