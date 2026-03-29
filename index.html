@@ -1,0 +1,170 @@
+<html>
+<head>
+<TITLE>àåäã ãåúï - àúø äðöçä</TITLE>
+
+
+<META Name ="description" CONTENT ="àúø æä äå÷í ìæëøå ùì àåäã àäåáðå àùø ð÷èó îàéúðå áèøí òú. áàúø àôùø ìäúøô÷ òì æëøåðåú, ìùúó áâòâåòéí åâí ìúú, ì÷áì, åìäòáéø àú æä äìàä ááåîøðâ.">
+
+<meta name="keywords" content="àåäã, ãåúï, àúø äðöçä, äðöçä, äø ÷å÷, ðéå-æéìðã, îèééì, ðäøâ, úîéã éçëå ìê, áåîøðâ, úòáéø àú æä äìàä, úï ÷ç, äñôãéí, âòâåòéí, Ohad, Dotan, Boomerang">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta http-equiv="imagetoolbar" content="no">
+
+<style>
+body {
+    scrollbar-face-color: #116CA1;
+    scrollbar-shadow-color: #043B5A;
+    scrollbar-highlight-color: #4EA4D5;
+    scrollbar-3dlight-color: #045584;
+    scrollbar-darkshadow-color: #12547A;
+    scrollbar-track-color: #033958;
+    scrollbar-arrow-color: #FFB13F;
+}
+</style>
+<!-- âìøéä -->
+
+<script type="text/javascript">
+<!--
+<!--
+
+//Jeff
+//www.huntingground.freeserve.co.uk
+
+is1afArr=new Array()
+is1afArr[0]="images/Ohadotan_P-1.jpg"
+is1afArr[1]="images/Ohadotan_P-2.jpg"
+is1afArr[2]="images/Ohadotan_P-3.jpg"
+is1afArr[3]="images/Ohadotan_P-4.jpg"
+is1afArr[4]="images/Ohadotan_P-5.jpg"
+is1afArr[5]="images/Ohadotan_P-6.jpg"
+
+pause=5 // seconds
+dualFade=1 // 0 = fades in, 1 = fades out then in
+fadeStep=1
+fadeSpeed=10
+
+count=0
+fading=0
+minFadeValue=0
+slideShowTimer=null
+
+preload=new Array()
+for(var i=0;i<is1afArr.length;i++){
+preload[i]=new Image()
+preload[i].src=is1afArr[i]
+}
+
+function initIS1af(){
+if(dualFade==0){fadeValue=0}
+else{fadeValue=100}
+fadeIS1af()
+fadeTime=(dualFade==1?(((100/fadeStep)*fadeSpeed)*2):(((100/fadeStep)*fadeSpeed)))
+slideShowTimer=setTimeout("showIS1af()",(pause*1000)+fadeTime)
+}
+
+function showIS1af(){
+clearTimeout(slideShowTimer)
+displayPic=document.images["pic"]
+displayPic.alt=is1afArr[count]
+displayPic.src=is1afArr[count]
+count=(count==is1afArr.length-1?0:count+1)
+initIS1af()
+}
+
+function fadeIS1af(){
+fading=1
+fadeValue -= fadeStep
+fadeTimer=setTimeout("fadeIS1af()",fadeSpeed)
+if(displayPic.filters){displayPic.filters.alpha.opacity=fadeValue}
+else{displayPic.style.opacity=(fadeValue/100)-0.1}
+if(fadeValue<minFadeValue){ // for fade out first
+fadeValue=minFadeValue
+fadeStep= -fadeStep
+displayPic.src=is1afArr[count]
+}
+if(fadeValue>=100){ // fade in
+fadeValue=100
+fadeStep= -fadeStep
+fading=0
+clearTimeout(fadeTimer)
+}
+}
+
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28792083-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- ñåó âìøéä -->
+</HEAD>
+<BODY onload="showIS1af()"  BGCOLOR="#033958" background="images/REKA.jpg" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<br><br>
+<TABLE align="center" WIDTH=900 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="images/Ohadotan_01.jpg" WIDTH=900 HEIGHT=107 ALT=""></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/Ohadotan_02.jpg" WIDTH=430 HEIGHT=289 ALT=""></TD>
+			<!-- úà âìøéä -->
+		<TD BGCOLOR=#D4ECEB width="416" height="289">
+		 <img name="pic" id="pic"  src="blank.gif" hspace="0" vspace="0" border="0" align="right" style="width:416px; height:289px; filter:alpha(opacity=100); opacity:0.9"></TD>
+			<!-- ñåó úà âìøéä -->
+		<TD>
+			<IMG SRC="images/Ohadotan_04.jpg" WIDTH=54 HEIGHT=289 ALT=""></TD>
+	</TR>
+	<TR>
+	<!-- úà ëì äæëåéåú -->
+		
+    <TD COLSPAN=3> <IMG SRC="images/Ohadotan_05.jpg" ALT="" WIDTH=900 HEIGHT=326 border="0" usemap="#Map"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 background="images/Ohadotan_06.jpg">
+			<TABLE WIDTH=900 BORDER=0 CELLPADDING=0 CELLSPACING=0 valign="top" background="images/Ohadotan_06.jpg">
+	<TR>
+		<TD WIDTH="100" HEIGHT="25"    align="right">
+		<font class="d">	<a class="menu1"  href="http://www.ayagolan.com" target="_blank">òéöåá  àúø:</a>
+			<a class="menu1"  href="http://www.ayagolan.com" target="_blank">   àéä âåìï</a></font></TD>
+		<TD WIDTH="800" HEIGHT="25"  align="center"  dir="rtl">
+			<font class="d"> ©  ëì äæëåéåú ùîåøåú: <a class="menu1"  href="http://www.ohadotan.com">ìîùôçú ãåúï</a></font></TD>
+		
+	</TR>
+</TABLE></TD>
+<!-- ñåó úà ëì äæëåéåú -->
+	</TR>
+</TABLE>
+<map name="Map">
+  <area shape="rect" coords="760,291,865,325" href="Always.html">
+  <area shape="rect" coords="867,291,895,322" href="English.html">
+</map>
+</body>
+</html>

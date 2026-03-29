@@ -1,0 +1,59 @@
+font.a
+{font-family:arial;    
+font-size:15px;
+color:#676C08;
+font-weight:bold;
+text-align: right
+}
+font.b
+{font-family:arial;    
+font-size:14px;
+color:#676C08;
+font-weight:bold;
+text-align: right
+}
+font.c
+{font-family:arial;    
+font-size:16px;
+color:#754715;
+text-align: right
+}
+font.d
+{font-family:arial;    
+font-size:11px;
+color:#BCAC8E;
+text-align: right
+}
+font.G
+{font-family:arial;    
+font-size:13px;
+color:#7f724f;
+text-align: right
+}
+font.p
+{font-family:arial;    
+font-size:13px;
+color:#AE9A66;
+font-weight:bold;
+text-align: right
+}
+a:link, a:visited, a:active{color: #0876B6; text-decoration:none;  font-weight:bold; font-family:arial;  font-size: 16px;}
+
+a:hover{color:#48A5C1; font-weight:bold; font-family:arial; font-size: 16px; text-decoration: underline;}
+
+a.menu1:link, a.menu1:visited, a.menu1:active{color: #BCAC8E; text-decoration:none; font-weight:normal;  font-family:arial;  font-size: 11px;}
+
+a.menu1:hover{color:#78CBFB; font-weight:normal; font-family:arial; font-size: 11px; text-decoration: underline;}
+
+
+a.menu2:link, a.menu2:visited, a.menu2:active{color: #775D5D; text-decoration:none; font-weight:normal;  font-family:arial;  font-size: 13px;}
+
+a.menu2:hover{color:#775D5D; font-weight:normal; font-family:arial; font-size: 13px; text-decoration: underline;}
+
+H1                  
+{
+    FONT-SIZE: 15px;            
+    COLOR: #676C08;         
+    font-weight: bold;       
+    FONT-FAMILY: Arial, 'Arial (Hebrew)'        
+}   

@@ -1,0 +1,14 @@
+# Netlify
+.netlify/
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local env files
+.env
+.env.local

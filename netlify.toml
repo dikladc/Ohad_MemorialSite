@@ -1,0 +1,22 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/memories"
+  to = "/NewMemories.html"
+  status = 200
+
+[[redirects]]
+  from = "/memories/success"
+  to = "/NewMemories.html?success=true"
+  status = 200
+
+# Form submission success redirect
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 404
+
+[build.environment]
+  NODE_VERSION = "18"
