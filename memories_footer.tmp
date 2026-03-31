@@ -1,0 +1,30 @@
+</font></div>
+</td>
+</tr>
+</table>
+</TD>
+<!-- סוף טבלת טקסט -->
+	</TR>
+	<TR>
+	<!-- תא כל הזכויות -->
+		<TD COLSPAN=2 bgcolor="#116CA1"  HEIGHT="25">
+			<TABLE WIDTH=1000 BORDER=0 CELLPADDING=0 CELLSPACING=0 valign="top">
+	<TR>
+		
+		<TD WIDTH="850" HEIGHT="25" bgcolor="#116CA1"  align="center"  dir="rtl">
+			<font class="d"> ©  כל הזכויות שמורות: <a class="menu1"  href="http://www.ohadotan.com">למשפחת דותן</a></font></TD>
+		<TD WIDTH="150" HEIGHT="25"  bgcolor="#116CA1"  align="right">
+		<font class="d">	<a class="menu1"  href="http://www.ayagolan.com" target="_blank">עיצוב  אתר:</a>
+			<a class="menu1"  href="http://www.ayagolan.com" target="_blank">   איה גולן</a>&nbsp;&nbsp;</font></TD>
+	</TR>
+</TABLE>
+</TD>
+<!-- סוף תא כל הזכויות -->
+	</TR>
+</TABLE>
+
+<map name="Map">
+  <area shape="rect" coords="408,11,980,100" href="index.html" alt="אוהד דותן - אתר הנצחה">
+</map>
+</BODY>
+</HTML>

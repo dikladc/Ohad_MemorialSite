@@ -46,54 +46,16 @@ body {
     scrollbar-track-color: #033958;
     scrollbar-arrow-color: #FFB13F;
 }
-.form-group {
-    margin-bottom: 15px;
-}
-label {
-    display: block;
-    font-weight: bold;
-    color: #676C08;
-    margin-bottom: 5px;
-    font-size: 14px;
+.honeypot {
+    display: none;
 }
 input[type="text"],
 input[type="email"],
-textarea {
-    width: 95%;
-    padding: 8px;
-    border: 2px solid #D4ECEB;
-    font-size: 14px;
+textarea,
+input[type="file"] {
     font-family: Arial, sans-serif;
+    font-size: 12px;
     direction: rtl;
-}
-textarea {
-    min-height: 120px;
-}
-button[type="submit"] {
-    background-color: #116CA1;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-button[type="submit"]:hover {
-    background-color: #0876B6;
-}
-.required {
-    color: #d9534f;
-}
-.success-message {
-    background-color: #d4edda;
-    border: 2px solid #c3e6cb;
-    color: #155724;
-    padding: 15px;
-    margin-bottom: 20px;
-    display: none;
-}
-.honeypot {
-    display: none;
 }
 </style>
 </HEAD>
@@ -104,23 +66,16 @@ button[type="submit"]:hover {
     <TD COLSPAN=2> <IMG SRC="images/Ohad_01.jpg" ALT="" WIDTH=1000 HEIGHT=110 border="0" usemap="#Map"></TD>
 	</TR>
 	<TR>
-		<TD valign="top" width="770">
+		<TD bgcolor="#FFD88D" valign="top" align="center" width="770" height="100%">
 			<!-- תוכן ראשי -->
-			<TABLE WIDTH=770 BORDER=0 CELLPADDING=20 CELLSPACING=0>
-				<TR>
-					<TD align="right" valign="top">
-
-						<div id="success-message" class="success-message">
-							<font class="b">תודה רבה! הזיכרון שלך נשמר בהצלחה ויופיע בקרוב באתר.</font>
-						</div>
-
-						<font class="a"><b>זכרונות חדשים</b></font><br><br>
+			<table align="center" valign="top" cellspacing="10" cellpadding="0"  width="700" bgcolor="#FFD88D">
+<tr>
+       <td valign="top" dir="rtl">
 
 						<font class="c">
 						<div align="justify">
-						לכולנו יש זיכרונות משותפים עם אוהד. אירועים משמעותיים שחווינו ביחד איתו או סתם אפיזודות מצחיקות / מרגשות / עצובות וכל דבר אחר.
 						<br><br>
-						לכל מי שהכיר את אוהד - כאן המקום להעלות על הכתב זיכרונות עימו מהתקופה המשותפת. אירועים, הלצות, שיחות, מסיבות, טיולים, בילויים וכל דבר אחר שאתם זוכרים מאוהד ורוצים לשתף.
+						לכל מי שהכיר את אוהד, וגם מי שלא - כאן המקום להעלות על הכתב זיכרונות עימו מהתקופה המשותפת. אירועים, הלצות, שיחות, מסיבות, טיולים, בילויים או כל דבר אחר שתרצו לכתוב.
 						<br><br>
 						</div>
 
@@ -128,7 +83,7 @@ button[type="submit"]:hover {
 
 						<b>שתף זיכרון משלך:</b><br><br>
 
-						<form name="memories" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
+						<form name="memories" method="POST" action="/ThankYou.html" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
 							<!-- Honeypot field for spam protection -->
 							<p class="honeypot">
 								<label>Don't fill this out if you're human: <input name="bot-field" /></label>
@@ -136,35 +91,22 @@ button[type="submit"]:hover {
 
 							<input type="hidden" name="form-name" value="memories" />
 
-							<div class="form-group">
-								<label for="name">שם <span class="required">*</span></label>
-								<input type="text" id="name" name="name" required placeholder="השם שלך">
-							</div>
+							<b>שם <font color="red">*</font></b><br>
+							<input type="text" id="name" name="name" required placeholder="השם שלך" size="50" style="font-family: arial; font-size: 14px; color: #754715;"><br><br>
 
-							<div class="form-group">
-								<label for="email">אימייל (לא יפורסם)</label>
-								<input type="email" id="email" name="email" placeholder="your@email.com">
-							</div>
+							<b>אימייל (לא יפורסם)</b><br>
+							<input type="email" id="email" name="email" placeholder="your@email.com" size="50" style="font-family: arial; font-size: 14px; color: #754715;"><br><br>
 
-							<div class="form-group">
-								<label for="title">כותרת</label>
-								<input type="text" id="title" name="title" placeholder="כותרת קצרה לזיכרון">
-							</div>
+							<b>כותרת</b><br>
+							<input type="text" id="title" name="title" placeholder="כותרת קצרה לזיכרון" size="50" style="font-family: arial; font-size: 14px; color: #754715;"><br><br>
 
-							<div class="form-group">
-								<label for="memory">הזיכרון <span class="required">*</span></label>
-								<textarea id="memory" name="memory" required placeholder="ספר לנו את הזיכרון שלך עם אוהד..."></textarea>
-							</div>
+							<b>הזיכרון <font color="red">*</font></b><br>
+							<textarea id="memory" name="memory" required placeholder="ספר לנו את הזיכרון שלך עם אוהד..." rows="8" cols="60" style="font-family: arial; font-size: 14px; color: #754715;"></textarea><br><br>
 
-							<div class="form-group">
-								<label for="photo">תמונה (אופציונלי)</label>
-								<input type="file" id="photo" name="photo" accept="image/*"><br>
-								<small style="color: #666; font-size: 12px;">תמונה שמתאימה לזיכרון</small>
-							</div>
+							<b>תמונה (אופציונלי)</b><br>
+							<input type="file" id="photo" name="photo" accept="image/*" style="font-family: arial; font-size: 14px;"><br><br>
 
-							<div class="form-group">
-								<button type="submit">שלח זיכרון</button>
-							</div>
+							<center><input type="submit" value="שלח זיכרון" style="background-color: #116CA1; color: white; padding: 10px 25px; border: none; font-size: 14px; font-weight: bold; cursor: pointer; font-family: arial;"></center>
 						</form>
 
 						<br><br>
@@ -172,11 +114,11 @@ button[type="submit"]:hover {
 						<br><br>
 
 						</font>
-
-					</TD>
-				</TR>
-			</TABLE>
-			<!-- סוף תוכן ראשי -->
+</td>
+</tr>
+</table>
+</TD>
+<!-- סוף טבלת טקסט -->
 		</TD>
 
 		<!-- תפריט -->
@@ -214,7 +156,7 @@ button[type="submit"]:hover {
 		  <TD> <a href="Longing.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','images/Ohad_bouton-ROL_10.jpg',1)"><img src="images/Ohad_bouton_10.jpg" name="Image29" width="230" height="30" border="0"></a></TD>
 	</TR>
 	<TR>
-		  <TD> <a href="NewMemories.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','images/Ohad_bouton-ROL_11.jpg',1)"><img src="images/Ohad_bouton_11.jpg" name="Image30" width="230" height="30" border="0"></a></TD>
+		  <TD> <a href="Memories.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','images/Ohad_bouton-ROL_11.jpg',1)"><img src="images/Ohad_bouton_11.jpg" name="Image30" width="230" height="30" border="0"></a></TD>
 	</TR>
 	<TR>
 		  <TD> <a href="Forever.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','images/Ohad_bouton-ROL_12.jpg',1)"><img src="images/Ohad_bouton_12.jpg" name="Image31" width="230" height="30" border="0"></a></TD>
