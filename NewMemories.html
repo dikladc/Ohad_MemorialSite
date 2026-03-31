@@ -83,7 +83,7 @@ input[type="file"] {
 
 						<b>שתף זיכרון משלך:</b><br><br>
 
-						<form name="memories" method="POST" action="/ThankYou.html" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
+						<form name="memories" method="POST" action="/ThankYou.html" data-netlify="true" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
 							<!-- Honeypot field for spam protection -->
 							<p class="honeypot">
 								<label>Don't fill this out if you're human: <input name="bot-field" /></label>
@@ -106,7 +106,11 @@ input[type="file"] {
 							<b>תמונה (אופציונלי)</b><br>
 							<input type="file" id="photo" name="photo" accept="image/*" style="font-family: arial; font-size: 14px;"><br><br>
 
-							<center><input type="submit" value="שלח זיכרון" style="background-color: #116CA1; color: white; padding: 10px 25px; border: none; font-size: 14px; font-weight: bold; cursor: pointer; font-family: arial;"></center>
+							<center>
+								<div data-netlify-recaptcha="true"></div>
+								<br>
+								<input type="submit" value="שלח זיכרון" style="background-color: #116CA1; color: white; padding: 10px 25px; border: none; font-size: 14px; font-weight: bold; cursor: pointer; font-family: arial;">
+							</center>
 						</form>
 
 						<br><br>
